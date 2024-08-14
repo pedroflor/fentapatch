@@ -16,3 +16,8 @@ Original developer: `OSIRIS Lab`
 **INSTALL**
 
 Copy `icons`, `py3`, `fentapatch.py` to `/PATH/to/IDA-PRO-LINUX/plugins/`
+
+
+**Screenshot**
+
+![image](https://github.com/user-attachments/assets/ee4a196c-7612-4d11-a9d2-d1af59b9e5a1)
