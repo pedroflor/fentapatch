@@ -8,7 +8,7 @@ Original developer: `OSIRIS Lab`
 **Changes in this fork:**
 
  Clean-up to work on IDA PRO 9+ Linux
- Changine the python file to fentapatch
+ Renamed the python file to fentapatch
 
 ---
 
