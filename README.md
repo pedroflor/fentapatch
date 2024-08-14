@@ -1,0 +1,1 @@
+Copy "icons", "py3", "Fentanyl.py" to /PATH/to/IDA-PRO-LINUX/plugins/
