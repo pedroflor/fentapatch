@@ -1,0 +1,4 @@
+- [ ] Refactoring
+- [ ] Test agains IDA 8.x Win/MAC
+- [ ] Bug fixes
+- [ ] ???
