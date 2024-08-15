@@ -32,7 +32,7 @@ Support more architectures than just x86 and x86_64. It automates common patchin
 
 ---
 
-**Weried relationship in graph**
+**Weird relationship in graph**
 
 If you see this line, it's not related to this plugin... the fault is from IDA :)
 
