@@ -1,6 +1,6 @@
 __AUTHOR__ = 'OSIRIS Lab'
 PLUGIN_NAME = "Fentanyl"
-VERSION = '2.0.1'
+VERSION = '2.0.1.1'
 
 
 import idaapi
