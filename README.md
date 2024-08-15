@@ -21,7 +21,9 @@ Support more architectures than just x86 and x86_64. It automates common patchin
 **INSTALL**
 
 1) Download this repo
-2) Copy `icons`, `py3`, `fentapatch.py` to `/PATH/to/IDA-PRO-LINUX/plugins/`
+2) Copy `icons`, `py3`, `fentapatch.py` to 
+   - `/PATH/to/IDA-PRO-LINUX/plugins/`
+   - `C:\Program Files\IDA Professional 9.X\plugins`
 3) Enjoy it!
 
 ---
