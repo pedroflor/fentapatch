@@ -56,8 +56,11 @@ Fentanyl Assembler
 
     def _form_cb(self, fid):
         """ Handle callbacks and grab control values """
+
         # Only continue if Assemble (OK) pressed
-        if fid != -2:
+        #if fid != -2:
+        #    return
+        if fid == -5:
             return
 
         self.values = dict([
