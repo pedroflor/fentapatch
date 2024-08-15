@@ -14,6 +14,10 @@ Support more architectures than just x86 and x86_64. It automates common patchin
 
 ---
 
+**Tested on IDA Pro 9.0.2 Linux**
+
+---
+
 **INSTALL**
 
 1) Download this repo
