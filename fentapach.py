@@ -1,11 +1,22 @@
 __AUTHOR__ = 'OSIRIS Lab'
 PLUGIN_NAME = "Fentanyl"
-VERSION = '2.0.1.1'
+VERSION = '2.0.1.2'
 
-
+import os
+import sys
 import idaapi
+
+# Define el directorio base y el directorio de librerías
+BASE_DIR = os.path.join(os.path.dirname(__file__))
+LIB_DIR = os.path.join(BASE_DIR, "fentapatch")
+
+# Agrega LIB_DIR al sys.path para que los módulos dentro de 'lib' puedan ser importados
+sys.path.insert(0, LIB_DIR)
+
+
 import py3.hooks as hooks
 
+# Verify PyQT Version
 major, minor = map(int, idaapi.get_kernel_version().split("."))
 using_ida7api = (major > 6)
 using_pyqt5 = using_ida7api or (major == 6 and minor >= 9)
@@ -13,15 +24,13 @@ using_pyqt5 = using_ida7api or (major == 6 and minor >= 9)
 if using_pyqt5:
     import PyQt5.QtGui as QtGui
     import PyQt5.QtCore as QtCore
-
 else:
-    import PySide.QtGui as QtGui
-    import PySide.QtCore as QtCore
-
-    QtWidgets = QtGui
+    print("Error: PyQT5 not found!!!")
+    """QtWidgets = QtGui
     QtCore.pyqtSignal = QtCore.Signal
     QtCore.pyqtSlot = QtCore.Slot
-
+    from PyQt5 import QtWidgets"""
+    
 
 def PLUGIN_ENTRY():
     """
