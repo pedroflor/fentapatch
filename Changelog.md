@@ -1,3 +1,8 @@
+**2.0.1.2 - 08-15-2024**
+- Clean-up directories
+
+---
+
 **2.0.1.1 - 08-15-2024**
 - Fix Cancel & Close buttons
 - Tested on IDA Pro 9 - Linux/Windows x64
