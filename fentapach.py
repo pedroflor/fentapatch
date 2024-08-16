@@ -6,11 +6,11 @@ import os
 import sys
 import idaapi
 
-# Define el directorio base y el directorio de librerías
+# Define base directory
 BASE_DIR = os.path.join(os.path.dirname(__file__))
 LIB_DIR = os.path.join(BASE_DIR, "fentapatch")
 
-# Agrega LIB_DIR al sys.path para que los módulos dentro de 'lib' puedan ser importados
+# Add LIB_DIR to sys.path 
 sys.path.insert(0, LIB_DIR)
 
 
