@@ -194,3 +194,4 @@ def inject_actions(form, popup, form_type):
 
     # done
     return 0
+
