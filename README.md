@@ -44,4 +44,4 @@ If you see this line, it's not related to this plugin... the fault is from IDA :
 
 ---
 
-**Bug fixes and bug reports are wellcome!!!**
+**Bug fixes and bug reports are welcome!!!**
