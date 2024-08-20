@@ -21,7 +21,7 @@ class AssembleForm(object):
 BUTTON YES* Assemble
 BUTTON NO NONE
 BUTTON CANCEL Cancel
-Fentanyl Assembler
+fentapatch Assembler
 
 {form_cb}
 <:{inp}>
