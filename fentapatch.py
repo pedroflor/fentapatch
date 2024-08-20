@@ -1,6 +1,6 @@
 __AUTHOR__ = 'OSIRIS Lab'
-PLUGIN_NAME = "Fentanyl"
-VERSION = '2.0.1.2'
+PLUGIN_NAME = "fentapatch"
+VERSION = '2.0.1.3'
 
 import os
 import sys
@@ -24,6 +24,7 @@ using_pyqt5 = using_ida7api or (major == 6 and minor >= 9)
 if using_pyqt5:
     import PyQt5.QtGui as QtGui
     import PyQt5.QtCore as QtCore
+
 else:
     print("Error: PyQT5 not found!!!")
     """QtWidgets = QtGui
@@ -41,11 +42,11 @@ def PLUGIN_ENTRY():
 
 class fentanyl(idaapi.plugin_t):
     """
-    The IDA Plugin for Fentanyl.
+    The IDA Plugin for fentapatch.
     """
 
     flags = idaapi.PLUGIN_PROC | idaapi.PLUGIN_HIDE
-    comment = "Fentanyl - IDA Multitool"
+    comment = "fentapatch - IDA Multitool"
     help = "Visit ... for help."
     wanted_name = PLUGIN_NAME
 
