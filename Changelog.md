@@ -1,3 +1,9 @@
+**2.0.1.3 - 08-19-2024**
+- Rename fentapatch.py filename
+- Automatic comment insertion
+
+---
+
 **2.0.1.2 - 08-15-2024**
 - Clean-up directories
 
