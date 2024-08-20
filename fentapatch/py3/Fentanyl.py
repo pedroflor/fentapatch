@@ -8,6 +8,7 @@ Main Fentanyl class.
 import idautils
 
 from py3.Util import *
+from datetime import datetime
 
 __all__ = ['Fentanyl']
 
@@ -27,6 +28,15 @@ _JUMPS = [
 # Generate the opposite mapping as well
 _JUMPS = dict(_JUMPS + [i[::-1] for i in _JUMPS])
 
+def write_comment(ea):
+    # Insert the original assembly line as comment
+    # TODO: Insert the prevoious code
+    
+    current_time = datetime.now()
+    # Formatear la fecha y hora en el formato deseado
+    formatted_time = current_time.strftime("%d/%m/%Y - %H:%M:%S")    
+    comment = "Patched with fentapatch ::: " + formatted_time
+    idaapi.set_cmt(ea, comment, 0)
 
 class Fentanyl(object):
     """ Manages assembling into an IDB and keeping track of undo/redo stacks """
@@ -107,6 +117,7 @@ class Fentanyl(object):
 
         return ''.join(nparts)
 
+
     def assemble(self, ea, asm, save_state=True, opt_fix=True, opt_nop=True):
         """ Assemble into memory """
         # Fixup the assemble
@@ -155,6 +166,8 @@ class Fentanyl(object):
             self.redo_buffer = []
         print(blob)
         write_data(ea, blob)
+        # Insert comment
+        write_comment(ea)
         return success, old
 
     def nopout(self, ea, sz):
