@@ -20,11 +20,13 @@ Support more architectures than just x86 and x86_64. It automates common patchin
 
 **INSTALL**
 
-1) Download this repo
-2) Copy `fentapatch` folder and `fentapatch.py` file to:
-   - `/PATH/to/IDA-PRO-LINUX/plugins/`
-   - `C:\Program Files\IDA Professional 9.X\plugins\`
-3) Enjoy it!
+See Wiki: https://github.com/pedroflor/fentapatch/wiki/Install
+
+---
+
+**KEY BINDINGS**
+
+See Wiki: https://github.com/pedroflor/fentapatch/wiki/Key-Bindings
 
 ---
 
