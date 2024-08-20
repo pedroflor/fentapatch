@@ -36,13 +36,9 @@ See Wiki: https://github.com/pedroflor/fentapatch/wiki/Key-Bindings
 
 ---
 
-**Weird relationship in graph**
+**Documentation**
 
-If you see this line, it's not related to this plugin... the fault is from IDA :)
-
-**Fix**: `IDA Pro -> Windows -> Reset desktop`
-
-![image](https://github.com/user-attachments/assets/ac69d735-c6f9-49fc-a5ca-15aac9c47699)
+Go to the Wiki: https://github.com/pedroflor/fentapatch/wiki
 
 ---
 
