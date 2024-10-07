@@ -14,7 +14,7 @@ Support more architectures than just x86 and x86_64. It automates common patchin
 
 ---
 
-**Tested on `IDA Pro 9.0.2 Linux/Windows x64`**
+**Tested on `IDA Pro 9.0.240925 Linux/Windows x64 (9.0 RC1)`**
 
 ---
 
