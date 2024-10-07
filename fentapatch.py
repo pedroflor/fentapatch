@@ -181,7 +181,7 @@ def inject_actions(form, popup, form_type):
     # disassembly window
     #
 
-    if form_type == idaapi.BWN_DISASMS:
+    if form_type == idaapi.BWN_DISASM:
         # insert the prefix action entry into the menu
         #
         for h in hooks.HOOKS:
